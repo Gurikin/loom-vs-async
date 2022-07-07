@@ -1,13 +1,14 @@
-package org.gurikin.sockets.net;
+package org.gurikin.sockets.loom;
 
 import lombok.extern.slf4j.Slf4j;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
 
-@Slf4j
-public class Main {
+public class LoomMain {
 
     public static void main(String[] args) {
         int cnt = 0;
@@ -16,10 +17,10 @@ public class Main {
         ) {
             while (true) {
                 Socket socket = serverSocket.accept();
-                new ClientSocketThread(socket, ++cnt).start();
+                Thread.startVirtualThread(new ClientSocketRunnable(socket, ++cnt));
             }
         } catch (IOException e) {
-            log.error(e.getMessage(), e);
+            System.err.println(e.getMessage());
         }
     }
 }

@@ -1,4 +1,4 @@
-package org.gurikin.sockets.net;
+package org.gurikin.sockets.loom;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -9,9 +9,8 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.net.Socket;
 
-@Slf4j
 @RequiredArgsConstructor
-public class ClientSocketThread extends Thread {
+public class ClientSocketRunnable implements Runnable {
     private final Socket clientSocket;
     private final int clientNum;
 
@@ -30,27 +29,27 @@ public class ClientSocketThread extends Thread {
      */
     @Override
     public void run() {
-        try (BufferedReader in = new BufferedReader(
+        try(BufferedReader in = new BufferedReader(
                 new InputStreamReader(clientSocket.getInputStream()));
-             OutputStreamWriter out =
-                     new OutputStreamWriter(clientSocket.getOutputStream())) {
-            log.info("ClientSocketRunnable with number = {} has started.", clientNum);
+            OutputStreamWriter out =
+                    new OutputStreamWriter(clientSocket.getOutputStream())) {
+            System.out.printf("ClientSocketRunnable with number = %d has started.\n", clientNum);
 
             String bodyLine;
-            log.info("Request Headers:");
+            System.out.println("Request Headers:");
             while (true) {
                 bodyLine = in.readLine();
                 if (bodyLine == null || bodyLine.equals("")) break;
-                log.info(bodyLine);
+                System.out.println(bodyLine);
             }
             StringBuilder payload = new StringBuilder();
             while (in.ready()) {
                 payload.append((char) in.read());
             }
-            log.info("Payload data is: " + payload);
-            log.info("===============");
-            log.info("===============");
-            log.info("===============");
+            System.out.println("Payload data is: " + payload);
+            System.out.println("===============");
+            System.out.println("===============");
+            System.out.println("===============");
 
             out.append("HTTP/1.1 200 OK\n");
             out.append("Content-Type: text/html\n");
@@ -69,7 +68,7 @@ public class ClientSocketThread extends Thread {
         } catch (IOException e) {
             throw new RuntimeException(e);
         } finally {
-            log.info("Client with number = {} is closed.", clientNum);
+            System.out.printf("Client with number = %s is closed.\n", clientNum);
         }
     }
 }

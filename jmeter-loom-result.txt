@@ -1,0 +1,58 @@
+jmeter -n -t ~/1.dev/java/jmeter/SocketServerTest.jmx
+Creating summariser <summary>
+Created the tree successfully using /home/harry/1.dev/java/jmeter/SocketServerTest.jmx
+Starting standalone test @ 2022 Jul 7 09:01:43 MSK (1657173703153)
+Waiting for possible Shutdown/StopTestNow/HeapDump/ThreadDump message on port 4445
+summary + 116697 in 00:00:17 = 6950.4/s Avg:     0 Min:     0 Max:    18 Err:     0 (0.00%) Active: 4 Started: 4 Finished: 0
+summary + 253593 in 00:00:30 = 8453.1/s Avg:     0 Min:     0 Max:    27 Err:     0 (0.00%) Active: 4 Started: 4 Finished: 0
+summary = 370290 in 00:00:47 = 7913.9/s Avg:     0 Min:     0 Max:    27 Err:     0 (0.00%)
+summary + 253653 in 00:00:30 = 8455.1/s Avg:     0 Min:     0 Max:    34 Err:     0 (0.00%) Active: 4 Started: 4 Finished: 0
+summary = 623943 in 00:01:17 = 8125.3/s Avg:     0 Min:     0 Max:    34 Err:     0 (0.00%)
+summary + 255695 in 00:00:30 = 8523.2/s Avg:     0 Min:     0 Max:    29 Err:     0 (0.00%) Active: 4 Started: 4 Finished: 0
+summary = 879638 in 00:01:47 = 8237.1/s Avg:     0 Min:     0 Max:    34 Err:     0 (0.00%)
+summary + 254240 in 00:00:30 = 8474.7/s Avg:     0 Min:     0 Max:    54 Err:     0 (0.00%) Active: 4 Started: 4 Finished: 0
+summary = 1133878 in 00:02:17 = 8289.2/s Avg:     0 Min:     0 Max:    54 Err:     0 (0.00%)
+summary + 252550 in 00:00:30 = 8418.3/s Avg:     0 Min:     0 Max:   159 Err:     0 (0.00%) Active: 4 Started: 4 Finished: 0
+summary = 1386428 in 00:02:47 = 8312.4/s Avg:     0 Min:     0 Max:   159 Err:     0 (0.00%)
+summary + 253489 in 00:00:30 = 8449.6/s Avg:     0 Min:     0 Max:    69 Err:     0 (0.00%) Active: 4 Started: 4 Finished: 0
+summary = 1639917 in 00:03:17 = 8333.3/s Avg:     0 Min:     0 Max:   159 Err:     0 (0.00%)
+summary + 252151 in 00:00:30 = 8404.5/s Avg:     0 Min:     0 Max:    22 Err:     0 (0.00%) Active: 4 Started: 4 Finished: 0
+summary = 1892068 in 00:03:47 = 8342.7/s Avg:     0 Min:     0 Max:   159 Err:     0 (0.00%)
+summary + 251160 in 00:00:30 = 8372.6/s Avg:     0 Min:     0 Max:    95 Err:     0 (0.00%) Active: 4 Started: 4 Finished: 0
+summary = 2143228 in 00:04:17 = 8346.2/s Avg:     0 Min:     0 Max:   159 Err:     0 (0.00%)
+summary + 265202 in 00:00:30 = 8840.1/s Avg:     0 Min:     0 Max:    26 Err:     0 (0.00%) Active: 4 Started: 4 Finished: 0
+summary = 2408430 in 00:04:47 = 8397.9/s Avg:     0 Min:     0 Max:   159 Err:     0 (0.00%)
+summary + 263106 in 00:00:30 = 8770.2/s Avg:     0 Min:     0 Max:    50 Err:     0 (0.00%) Active: 4 Started: 4 Finished: 0
+summary = 2671536 in 00:05:17 = 8433.1/s Avg:     0 Min:     0 Max:   159 Err:     0 (0.00%)
+summary + 257119 in 00:00:30 = 8568.9/s Avg:     0 Min:     0 Max:   127 Err:     0 (0.00%) Active: 4 Started: 4 Finished: 0
+summary = 2928655 in 00:05:47 = 8444.9/s Avg:     0 Min:     0 Max:   159 Err:     0 (0.00%)
+summary + 265733 in 00:00:30 = 8859.5/s Avg:     0 Min:     0 Max:    16 Err:     0 (0.00%) Active: 4 Started: 4 Finished: 0
+summary = 3194388 in 00:06:17 = 8477.9/s Avg:     0 Min:     0 Max:   159 Err:     0 (0.00%)
+summary + 263076 in 00:00:30 = 8769.5/s Avg:     0 Min:     0 Max:    68 Err:     0 (0.00%) Active: 4 Started: 4 Finished: 0
+summary = 3457464 in 00:06:47 = 8499.4/s Avg:     0 Min:     0 Max:   159 Err:     0 (0.00%)
+summary + 264774 in 00:00:30 = 8825.8/s Avg:     0 Min:     0 Max:    12 Err:     0 (0.00%) Active: 4 Started: 4 Finished: 0
+summary = 3722238 in 00:07:17 = 8521.8/s Avg:     0 Min:     0 Max:   159 Err:     0 (0.00%)
+summary + 262153 in 00:00:30 = 8738.4/s Avg:     0 Min:     0 Max:    27 Err:     0 (0.00%) Active: 4 Started: 4 Finished: 0
+summary = 3984391 in 00:07:47 = 8535.7/s Avg:     0 Min:     0 Max:   159 Err:     0 (0.00%)
+summary + 258620 in 00:00:30 = 8620.7/s Avg:     0 Min:     0 Max:    52 Err:     0 (0.00%) Active: 4 Started: 4 Finished: 0
+summary = 4243011 in 00:08:17 = 8540.9/s Avg:     0 Min:     0 Max:   159 Err:     0 (0.00%)
+summary + 263748 in 00:00:30 = 8791.6/s Avg:     0 Min:     0 Max:    64 Err:     0 (0.00%) Active: 4 Started: 4 Finished: 0
+summary = 4506759 in 00:08:47 = 8555.1/s Avg:     0 Min:     0 Max:   159 Err:     0 (0.00%)
+summary + 263667 in 00:00:30 = 8788.9/s Avg:     0 Min:     0 Max:    28 Err:     0 (0.00%) Active: 4 Started: 4 Finished: 0
+summary = 4770426 in 00:09:17 = 8567.7/s Avg:     0 Min:     0 Max:   159 Err:     0 (0.00%)
+summary + 264057 in 00:00:30 = 8801.9/s Avg:     0 Min:     0 Max:    25 Err:     0 (0.00%) Active: 4 Started: 4 Finished: 0
+summary = 5034483 in 00:09:47 = 8579.7/s Avg:     0 Min:     0 Max:   159 Err:     0 (0.00%)
+summary + 264263 in 00:00:30 = 8808.8/s Avg:     0 Min:     0 Max:    22 Err:     0 (0.00%) Active: 4 Started: 4 Finished: 0
+summary = 5298746 in 00:10:17 = 8590.8/s Avg:     0 Min:     0 Max:   159 Err:     0 (0.00%)
+summary + 265046 in 00:00:30 = 8834.9/s Avg:     0 Min:     0 Max:    18 Err:     0 (0.00%) Active: 4 Started: 4 Finished: 0
+summary = 5563792 in 00:10:47 = 8602.2/s Avg:     0 Min:     0 Max:   159 Err:     0 (0.00%)
+summary + 261553 in 00:00:30 = 8718.4/s Avg:     0 Min:     0 Max:   125 Err:     0 (0.00%) Active: 4 Started: 4 Finished: 0
+summary = 5825345 in 00:11:17 = 8607.3/s Avg:     0 Min:     0 Max:   159 Err:     0 (0.00%)
+summary + 263599 in 00:00:30 = 8786.6/s Avg:     0 Min:     0 Max:    59 Err:     0 (0.00%) Active: 4 Started: 4 Finished: 0
+summary = 6088944 in 00:11:47 = 8614.9/s Avg:     0 Min:     0 Max:   159 Err:     0 (0.00%)
+summary + 262691 in 00:00:30 = 8756.4/s Avg:     0 Min:     0 Max:    73 Err:     0 (0.00%) Active: 4 Started: 4 Finished: 0
+summary = 6351635 in 00:12:17 = 8620.7/s Avg:     0 Min:     0 Max:   159 Err:     0 (0.00%)
+summary + 244488 in 00:00:30 = 8149.6/s Avg:     0 Min:     0 Max:    45 Err:     0 (0.00%) Active: 4 Started: 4 Finished: 0
+summary = 6596123 in 00:12:47 = 8602.3/s Avg:     0 Min:     0 Max:   159 Err:     0 (0.00%)
+summary + 259502 in 00:00:30 = 8650.1/s Avg:     0 Min:     0 Max:    31 Err:     0 (0.00%) Active: 4 Started: 4 Finished: 0
+summary = 6855625 in 00:13:17 = 8604.1/s Avg:     0 Min:     0 Max:   159 Err:     0 (0.00%)
